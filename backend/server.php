@@ -11,11 +11,12 @@ use Reviews\CustomerReview;
 require './importReviews/vendor/autoload.php';
 require './importReviews/reviewImportUrl.php';
 require '../vendor/autoload.php';
-require '../help.php';
+// require '../help.php';
 require './importReviews/Classes/PHPExcel.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 
 // if (isset($_GET['checkShopName'])) {
 //     $offset = $_GET['ot_PR_Offset'];

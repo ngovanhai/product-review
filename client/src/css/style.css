@@ -189,6 +189,7 @@ th {
   display: flex;
   align-items: center;
   margin: 5px 0px;
+  position: relative;
 }
 .divPreview {
   padding: 20px;
@@ -243,7 +244,11 @@ th {
   justify-content: center;
   flex-direction: column;
   background-color: var(--p-surface, white);
-  box-shadow: var(--p-card-shadow, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15));
+  box-shadow: var(
+    --p-card-shadow,
+    0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15)
+  );
   outline: 0.1rem solid transparent;
 }
 .card-title {
@@ -403,7 +408,10 @@ th {
   text-decoration: none;
   transition-property: background, border, box-shadow;
   transition-duration: var(--p-override-none, 200ms);
-  transition-timing-function: var(--p-override-none, cubic-bezier(0.64, 0, 0.35, 1));
+  transition-timing-function: var(
+    --p-override-none,
+    cubic-bezier(0.64, 0, 0.35, 1)
+  );
   -webkit-tap-highlight-color: transparent;
 }
 .polaris-button:focus {
@@ -838,7 +846,35 @@ th {
   align-items: "center";
   border-radius: "50%";
 }
-@media screen and (max-width: 1366px) {
+.iconCheck {
+  cursor: pointer;
+}
+
+.iconCheck:hover + .purchase {
+  display: block;
+}
+.purchase {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 1px 1px 3px #e6e6e6;
+  box-shadow: 1px 1px 3px #e6e6e6;
+  font-size: 0.9em;
+  padding: 3px 10px !important;
+  position: absolute;
+  top: -35px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 999;
+  display: none;
+}
+.title-comment {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1920px) {
   .nameRate {
     width: 25%;
   }
