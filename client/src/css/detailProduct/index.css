@@ -1,0 +1,78 @@
+/* Start Detail Product */
+.Polaris-Page {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100vw !important;
+  /* border: 1px solid #ebebec; */
+}
+.Polaris-Page-Header {
+  padding: 0 !important;
+}
+
+.card-detail {
+  display: flex;
+  width: 50% !important;
+}
+.rating-detail {
+  width: 50% !important;
+  display: flex;
+}
+/* .Polaris-Card {
+  box-shadow: none !important;
+} */
+/* End Detail Product */
+.infor-product {
+  display: flex;
+}
+.detail-card {
+  display: flex !important;
+  margin-top: 10px;
+  border: 1px solid #ebebec;
+}
+.title-detail-product {
+  font-size: 0.5em;
+}
+.info-detail {
+  margin-left: 30px;
+}
+#group-status {
+  display: flex;
+  margin: 10px 0 10px;
+}
+#rating-area {
+  background-color: red;
+}
+.rating-total {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rating-star {
+  width: 50%;
+  height: 100%;
+}
+/* p {
+  display: inline-;
+} */
+
+.star-progress {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+/* .Polaris-ProgressBar {
+  width: 100% !important;
+} */
+#btn-importUrl-detail {
+  background: #5664c1 !important;
+  color: white !important;
+}
+.btn-back {
+  color: #637381;
+}
+#medium-rating {
+  color: rgb(255, 181, 13);
+}

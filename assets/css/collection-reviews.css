@@ -1,0 +1,30 @@
+.ot-product-collection-reviews .ratingbox {
+  background: url(../images/star_style/color-stars-small.png);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: 0% 100%;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 15px;
+}
+.ot-product-collection-reviews .ratingbox span,
+.ot-product-collection-reviews .ratingbox div {
+  background-image: url(../images/star_style/color-stars-small.png);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-color: transparent;
+  display: block;
+  width: 1%;
+  height: 15px;
+  position: absolute;
+}
+.ot-product-collection-reviews .stars-orange {
+  width: 0;
+}
+/* KHONG NHAN */
+/* .ot-product-collection-reviews {
+    display: flex !important;
+    justify-content: center;
+  } */

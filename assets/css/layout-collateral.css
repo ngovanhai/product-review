@@ -1,0 +1,121 @@
+.ot-customer-reviews {
+  padding: 20px;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+.reviews-form .reviews-information {
+  width: 100%;
+  overflow: hidden;
+}
+.reviews-form .reviews-form-col-1 {
+  width: 49%;
+  float: left;
+}
+.reviews-form .reviews-form-col-2 {
+  width: 49%;
+  float: right;
+}
+.reviews-form #reviewer_submit {
+  width: 100%;
+  text-align: center;
+}
+.reviews-form input[type="submit"] {
+  color: #fff;
+}
+.reviews-form input[type="submit"]:hover {
+  color: #fff;
+}
+.reviewPreContent {
+  background: #fbfbfb;
+  font-style: normal;
+  padding: 10px 0 8px;
+  color: #000;
+  overflow: hidden;
+}
+.reviewTitle {
+  float: left;
+  color: #24272b;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 7px;
+  font-weight: 600;
+}
+.reviewName {
+  float: right;
+  font-size: 12px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+.review-item {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.reviewPurchase,
+.reviewNotPurchase,
+.reviewRecommend,
+.reviewNotRecommend {
+  display: inline-block;
+}
+.rating-title {
+  margin-right: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  display: block;
+}
+.ot-reviews #page_navigation a,
+.ot-reviews #page_navigation span {
+  background: #fff;
+}
+.customer-reviews-col-2 .item-review-histogram:hover,
+.ot-product-star-reviews .item-review-histogram:hover {
+  background-color: #ddd;
+}
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-1star,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-2star,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-3star,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-4star,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-5star,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-1star:hover,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-2star:hover,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-3star:hover,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-4star:hover,
+.customer-reviews-col-2 .item-review-histogram.histogram-filter-5star:hover,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-1star,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-2star,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-3star,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-4star,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-5star,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-1star:hover,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-2star:hover,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-3star:hover,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-4star:hover,
+.ot-product-star-reviews .item-review-histogram.histogram-filter-5star:hover {
+  background-color: #ddd;
+}
+.customer-reviews-col-2 .item-review-histogram .progress-bar,
+.ot-product-star-reviews .item-review-histogram .progress-bar {
+  background-color: #ddd;
+}
+.customer-reviews-col-2 .item-review-histogram:hover .progress-bar,
+.ot-product-star-reviews .item-review-histogram:hover .progress-bar {
+  background: #f6f6f6;
+}
+.customer-reviews-col-2 .item-review-histogram.histogram-filter .progress-bar,
+.customer-reviews-col-2
+  .item-review-histogram.histogram-filter:hover
+  .progress-bar,
+.ot-product-star-reviews .item-review-histogram.histogram-filter .progress-bar,
+.ot-product-star-reviews
+  .item-review-histogram.histogram-filter:hover
+  .progress-bar {
+  background-color: #f6f6f6;
+}
+@media (max-width: 1024px) {
+  .reviews-form .reviews-form-col-1,
+  .reviews-form .reviews-form-col-2 {
+    width: 100%;
+    float: left;
+  }
+}

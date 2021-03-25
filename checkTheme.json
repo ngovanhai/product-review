@@ -1,0 +1,65 @@
+[
+    {
+      "name": "narrative",
+      "product_content": ".product-template .product__content"
+    },
+    { "name": "jumpstart", "product_content": ".product-template .wrapper" },
+    {
+      "name": "boundless",
+      "product_content": "#shopify-section-product-template .product.grid"
+    },
+    {
+      "name": "simple",
+      "product_content": "#shopify-section-product-template > div"
+    },
+    {
+      "name": "supply",
+      "product_content": "#shopify-section-product-template #ProductSection"
+    },
+    { "name": "debut", "product_content": ".page-container .product-single" },
+    {
+      "name": "venture",
+      "product_content": "#shopify-section-product-template .page-width"
+    },
+    {
+      "name": "brooklyn",
+      "product_content": "#shopify-section-product-template .grid.product-single"
+    },
+    {
+      "name": "pop",
+      "product_content": "#shopify-section-product-template .grid.product-single"
+    },
+    {
+      "name": "minimal",
+      "product_content": "#shopify-section-product-template #ProductSection"
+    },
+    {
+      "name": "empire",
+      "product_content": "#shopify-section-static-product section:last-child"
+    },
+    {
+      "name": "pacific",
+      "product_content": "#shopify-section-page-product .product-wrap"
+    },
+    {
+      "name": "focal",
+      "product_content": ".page__container .product__tabs-content .product__tab-content:nth-child(3)"
+    },
+    {
+      "name": "responsive",
+      "product_content": ".product-template-section > div:last-child"
+    },
+    {
+      "name": "prestige",
+      "product_content": ".Product__Wrapper .Product__Tabs .Collapsible:nth-child(3) .Collapsible__Content"
+    },
+    {
+      "name": "fashionopolism",
+      "product_content": "#shopify-section-product-template .product-template div:last-child"
+    },
+    {
+      "name": "sunrise",
+      "product_content": "#shopify-section-product-template .product-description"
+    }
+  ]
+  
