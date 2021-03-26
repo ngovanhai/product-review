@@ -13,6 +13,7 @@ require './importReviews/reviewImportUrl.php';
 require '../vendor/autoload.php';
 // require '../help.php';
 require './importReviews/Classes/PHPExcel.php';
+require '../help.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -492,6 +493,8 @@ if (isset($_GET['syncCollections'])) {
 
 if (isset($_GET['getCollectionsSelect'])) {
     $shop = $_GET['shop'];
+    pr("hello");
+    die;
     $dataAllCollections = db_fetch_array("select * from custom_reviews_collections where shop = '$shop'");
     $response = array();
     for ($i = 0; $i < count($dataAllCollections); $i++) {

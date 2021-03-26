@@ -1,7 +1,7 @@
 <?php
-$apiKey = "a3a6b31a740a4790755a28fa051e9862";
-$appId = "1";
-$rootLink = "https://localhost/products-reviews";
+$apiKey = "489d5ec3fa1868c97590e775ce83b3cf";
+$appId = "3";
+$rootLink = "https://localhost/product-reviews-react";
 $trialTime = 30;
 $chargeType = "monthly";
 $price = 7.99;

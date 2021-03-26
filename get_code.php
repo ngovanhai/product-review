@@ -70,6 +70,8 @@ if (!empty($_GET['shop']) && !empty($_GET['code'])) {
             "trial_days" => $trialTime
         )
     );
+    pr($charge);
+    die;
     if ($chargeType == "one-time") {
         $recu = $shopify("POST", "/admin/api/$api_version/application_charges.json", $charge);
     } else {
