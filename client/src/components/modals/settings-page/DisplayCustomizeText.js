@@ -497,7 +497,7 @@ const DisplayCustomizeText = ({
                         value={siteKey}
                         placeholder="Enter your site key"
                         onChange={handleChangeSiteKey}
-                        // helpText="Special character '%s' will be replace with product's title, remove if you don't want it."
+                      // helpText="Special character '%s' will be replace with product's title, remove if you don't want it."
                       />
                     </div>
                     <div className="marginBottom">
@@ -654,7 +654,7 @@ const DisplayCustomizeText = ({
                     label="Reviews's list headline text"
                     value={listHeadline}
                     onChange={handleListHeadline}
-                    // helpText="Special character '%s' will be replace with product's title, remove if you don't want it."
+                  // helpText="Special character '%s' will be replace with product's title, remove if you don't want it."
                   />
                 </div>
                 <div className="marginBottom">
@@ -717,18 +717,6 @@ const DisplayCustomizeText = ({
                   marginBottom: "50px",
                 }}
               >
-                <div style={{ marginBottom: "9px", width: "50%" }}>
-                  <TextField
-                    label={authorName + " *"}
-                    placeholder={placeholderAuthorName}
-                  />
-                </div>
-                <div style={{ width: "50%", marginBottom: "9px" }}>
-                  <TextField
-                    label={authorEmail + " *"}
-                    placeholder={placeholderAuthorEmail}
-                  />
-                </div>
                 <div style={{ marginBottom: "9px" }}>
                   <div>
                     <p>{ratingLabel}</p>
@@ -777,6 +765,19 @@ const DisplayCustomizeText = ({
                     </div>
                   </div>
                 </div>
+                <div style={{ marginBottom: "9px", width: "50%" }}>
+                  <TextField
+                    label={authorName + " *"}
+                    placeholder={placeholderAuthorName}
+                  />
+                </div>
+                <div style={{ width: "50%", marginBottom: "9px" }}>
+                  <TextField
+                    label={authorEmail + " *"}
+                    placeholder={placeholderAuthorEmail}
+                  />
+                </div>
+
                 <div style={{ marginBottom: "16px", width: "50%" }}>
                   <TextField
                     label={reviewTitle + " *"}
@@ -809,43 +810,30 @@ const DisplayCustomizeText = ({
                     />
                   </Stack>
                 </div>
-                <div
-                  style={{
-                    marginBottom: "16px",
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  {/* <div style={{ display: "flex" }}> */}
-                  {/* <div style={{ width: 50, height: 25 }}>
-                      <DropZone type="image" disabled={true}>
-                        <DropZone.FileUpload />
-                      </DropZone>
-                    </div> */}
+                <div className="btn-upload-image" style={{ display: "flex" }}>
+                  <div className="image-upload" >
+                    <i class="fas fa-upload"></i>
+                  </div>
+                  <div className="text-upload-image" style={{ marginLeft: "20px" }}>
+                    <p style={{ fontWeight: "bold" }}>{imageButton}</p>
+                    <p > <i style={{ color: "#c4cdd5" }}>Accept .jpg, .png, .svg and max size 2MB </i></p>
+                  </div>
+
+                </div>
+
+                {/* <div> */}
+                <div className="btn-add-review">
                   <button
                     className="Polaris-Button"
                     style={{
                       background: colorButtonBackground,
                       color: colorButtontext,
-                      // float: "left",
+                      // float: "right",
                     }}
                   >
-                    {imageButton}
+                    {buttonSubmit}
                   </button>
-                  {/* </div> */}
                 </div>
-                {/* <div> */}
-                <button
-                  className="Polaris-Button"
-                  style={{
-                    background: colorButtonBackground,
-                    color: colorButtontext,
-                    // float: "right",
-                  }}
-                >
-                  {buttonSubmit}
-                </button>
-                {/* </div> */}
               </div>
             </div>
           </Card>

@@ -244,11 +244,7 @@ th {
   justify-content: center;
   flex-direction: column;
   background-color: var(--p-surface, white);
-  box-shadow: var(
-    --p-card-shadow,
-    0 0 0 1px rgba(63, 63, 68, 0.05),
-    0 1px 3px 0 rgba(63, 63, 68, 0.15)
-  );
+  box-shadow: var(--p-card-shadow, 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15));
   outline: 0.1rem solid transparent;
 }
 .card-title {
@@ -408,10 +404,7 @@ th {
   text-decoration: none;
   transition-property: background, border, box-shadow;
   transition-duration: var(--p-override-none, 200ms);
-  transition-timing-function: var(
-    --p-override-none,
-    cubic-bezier(0.64, 0, 0.35, 1)
-  );
+  transition-timing-function: var(--p-override-none, cubic-bezier(0.64, 0, 0.35, 1));
   -webkit-tap-highlight-color: transparent;
 }
 .polaris-button:focus {
@@ -872,6 +865,51 @@ th {
 }
 .title-comment {
   font-weight: 500;
+}
+/* 
+---style form new review ------- */
+#titleNameLabel {
+  font-weight: bold;
+}
+#titleEmailLabel {
+  font-weight: bold;
+}
+#titleCommentLabel {
+  font-weight: bold;
+}
+#titleMessageLabel {
+  font-weight: bold;
+}
+.btn-upload-image {
+  display: "flex";
+  width: 50%;
+  border-radius: 3px;
+  background-color: #fbf6ee;
+  padding: 5px;
+}
+.btn-upload-image:hover {
+  cursor: pointer;
+}
+.image-upload {
+  display: flex;
+  width: 3%;
+  position: relative;
+}
+.image-upload > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-upload > i:hover {
+  cursor: pointer;
+}
+.btn-add-review {
+  margin: 10px 0px;
+  width: 50%;
+}
+.btn-add-review > button {
+  float: right;
 }
 
 @media screen and (max-width: 1920px) {

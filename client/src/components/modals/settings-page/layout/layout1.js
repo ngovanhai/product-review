@@ -512,6 +512,7 @@ function Layout1(props) {
               }}
               onClick={onClickShowNewReview}
             >
+              <i class="fas fa-feather-alt" style={{ marginRight: "5px" }}></i>
               {reviewButton.toUpperCase()}
             </button>
             {/* <TextStyle variation="strong">{reviewButton}</TextStyle> */}

@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { connect } from "react-redux";
-import {} from "../../../actions/reviews";
+import { } from "../../../actions/reviews";
 import { ViewMinor } from "@shopify/polaris-icons";
 import jQuery from "jquery";
 
@@ -55,8 +55,9 @@ const ModalPreview = ({
 
   const handleChange = useCallback(() => setActive(!active), [active]);
   const handleShowNewReview = () => {
-    jQuery(".reviews-form").toggle("slow", function () {});
+    jQuery(".reviews-form").toggle("slow", function () { });
   };
+  console.log(imageButton);
   const activator = (
     <Button size="slim" icon={ViewMinor} onClick={handleChange}>
       Preview
@@ -73,26 +74,15 @@ const ModalPreview = ({
             <div
               style={{
                 margin: "10px 0 10px",
-                display: "block",
+                display: "none",
                 marginBottom: "50px",
               }}
               className="animate__animated animate__slideInDown reviews-form"
             >
-              <div style={{ marginBottom: "9px", width: "50%" }}>
-                <TextField
-                  label={authorName + " *"}
-                  placeholder={placeholderAuthorName}
-                />
-              </div>
-              <div style={{ width: "50%", marginBottom: "9px" }}>
-                <TextField
-                  label={authorEmail + " *"}
-                  placeholder={placeholderAuthorEmail}
-                />
-              </div>
+
               <div style={{ marginBottom: "9px" }}>
                 <div>
-                  <p>{ratingLabel}</p>
+                  <p style={{ fontWeight: "bold" }}>{ratingLabel}</p>
                 </div>
                 <div style={{ marginTop: "10px" }}>
                   <i
@@ -137,20 +127,38 @@ const ModalPreview = ({
                   ></i>
                 </div>
               </div>
+
+              <div style={{ marginBottom: "9px", width: "50%" }}>
+                <TextField
+                  id="titleName"
+                  label={authorName + " *"}
+                  placeholder={placeholderAuthorName}
+                />
+              </div>
+              <div style={{ width: "50%", marginBottom: "9px" }}>
+                <TextField
+                  id="titleEmail"
+                  label={authorEmail + " *"}
+                  placeholder={placeholderAuthorEmail}
+                />
+              </div>
+
               <div style={{ marginBottom: "16px", width: "50%" }}>
                 <TextField
+                  id="titleComment"
                   label={reviewTitle + " *"}
                   placeholder={placeholderReviewTitle}
                 />
               </div>
               <div style={{ marginBottom: "16px", width: "50%" }}>
                 <TextField
+                  id="titleMessage"
                   label={reviewMessage + " *"}
                   placeholder={placeholderReviewMessage}
                   multiline={2}
                 />
               </div>
-              <p>{recommendLabel}</p>
+              <p style={{ fontWeight: "bold" }}>{recommendLabel}</p>
               <div style={{ marginTop: "10px" }}>
                 <Stack>
                   <RadioButton
@@ -169,42 +177,31 @@ const ModalPreview = ({
                   />
                 </Stack>
               </div>
-              <div
-                style={{
-                  marginBottom: "16px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                {/* <div style={{ display: "flex" }}> */}
-                {/* <div style={{ width: 50, height: 25 }}>
-                      <DropZone type="image" disabled={true}>
-                        <DropZone.FileUpload />
-                      </DropZone>
-                    </div> */}
+              <div className="btn-upload-image" style={{ display: "flex" }}>
+                <div className="image-upload" >
+                  <i class="fas fa-upload"></i>
+                </div>
+                <div className="text-upload-image" style={{ marginLeft: "20px" }}>
+                  <p style={{ fontWeight: "bold" }}>{imageButton}</p>
+                  <p > <i style={{ color: "#c4cdd5" }}>Accept .jpg, .png, .svg and max size 2MB </i></p>
+                </div>
+
+              </div>
+
+              {/* <div> */}
+              <div className="btn-add-review">
                 <button
                   className="Polaris-Button"
                   style={{
                     background: colorButtonBackground,
                     color: colorButtontext,
-                    // float: "left",
+                    // float: "right",
                   }}
                 >
-                  {imageButton}
+                  {buttonSubmit}
                 </button>
-                {/* </div> */}
               </div>
-              {/* <div> */}
-              <button
-                className="Polaris-Button"
-                style={{
-                  background: colorButtonBackground,
-                  color: colorButtontext,
-                  // float: "right",
-                }}
-              >
-                {buttonSubmit}
-              </button>
+              <p></p>
               {/* </div> */}
             </div>
 
@@ -222,6 +219,7 @@ const ModalPreview = ({
                 selectedChangeLayout={selectedChangeLayout}
                 isPreview={active}
                 handleShowNewReview={handleShowNewReview}
+
               />
             ) : (
               <Layout2
@@ -236,6 +234,7 @@ const ModalPreview = ({
                 valueRadioRecommend={valueRadioRecommend}
                 isPreview={active}
                 handleShowNewReview={handleShowNewReview}
+                selectedChangeLayout={selectedChangeLayout}
               />
             )}
           </div>

@@ -2,7 +2,8 @@ import React, { useCallback, useState, useEffect } from "react";
 import { connect } from "react-redux";
 import ReactStars from "react-stars";
 import ModalPreview from "./ModalPreview";
-
+import Layout2 from "./layout/Layout2";
+// import Layout1 from "./layout/Layout1"
 import {
   Card,
   Select,
@@ -25,8 +26,8 @@ import {
   reloadSettings,
 } from "../../../actions/settings";
 import { FavoriteMajor } from "@shopify/polaris-icons";
-import Layout2 from "./layout/Layout2";
 import Layout1 from "./layout/Layout1";
+;
 const DisplayReviews = ({
   getSettings,
   saveSettingsReview,
@@ -51,9 +52,9 @@ const DisplayReviews = ({
     { label: "Masonry", value: "3" },
   ];
   const options2 = [
-    { label: "Overstock2", value: "1" },
-    { label: "Collateral2", value: "2" },
-    { label: "Masonry2", value: "3" },
+    { label: "Overstock", value: "1" },
+    { label: "Collateral", value: "2" },
+    { label: "Masonry", value: "3" },
   ];
 
   const handleChange = useCallback(
@@ -217,8 +218,8 @@ const DisplayReviews = ({
               <div style={{ padding: "20px" }}>
                 <div style={{ padding: "0 0 20px 0" }}>
                   <Subheading>Design</Subheading>
-                  <p>Choose Layout</p>
-                  <Stack vertical>
+                  <p style={{ padding: "10px 0px" }}>Choose Layout</p>
+                  <Stack >
                     <RadioButton
                       label="Layout 1"
                       checked={chooseLayout === "layout1"}
@@ -469,6 +470,7 @@ const DisplayReviews = ({
                   imageButton={imageButton}
                   buttonSubmit={buttonSubmit}
                 />
+
                 {chooseLayout === "layout1" ? (
                   <Layout1
                     valueSelectedStar={valueSelectedStar}
@@ -494,6 +496,7 @@ const DisplayReviews = ({
                     reviewButton={reviewButton}
                     valueRadioPurchased={valueRadioPurchased}
                     valueRadioRecommend={valueRadioRecommend}
+                    selectedChangeLayout={selectedChangeLayout}
                     isPreview={isPreview}
                   />
                 )}
