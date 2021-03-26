@@ -36,6 +36,7 @@ export const reloadSettings = () => async (dispatch) => {
 
 export const saveSettingsReview = (formData) => async (dispatch) => {
   try {
+    console.log(formData);
     const res = await axios.post(
       config.rootLink + "/backend/settings.php",
       { action: "saveSettingsReview", shop: shop, settings: formData },
@@ -90,6 +91,7 @@ export const saveSettingsCustomize = (formData) => async (dispatch) => {
 
 export const saveSettingsAdvanced = (formData) => async (dispatch) => {
   try {
+
     const res = await axios.post(
       config.rootLink + "/backend/settings.php",
       { action: "saveSettingsAdvanced", shop: shop, settings: formData },

@@ -58,7 +58,10 @@ const DisplayReviews = ({
   ];
 
   const handleChange = useCallback(
-    (_checked, newValue) => setchooseLayout(newValue),
+    (_checked, newValue) => {
+      setchooseLayout(newValue);
+      setStatusButtonSave(true)
+    },
     []
   );
   //select star
@@ -114,6 +117,7 @@ const DisplayReviews = ({
     button_color: colorButtonBackground,
     button_textcolor: colorButtontext,
     progress_color: colorReview,
+    choose_layout: chooseLayout
   };
 
   const handleSaveSettings = useCallback((formdata) => {

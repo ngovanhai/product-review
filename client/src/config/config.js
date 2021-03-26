@@ -16,8 +16,9 @@ const getUrlParameterJson = function getUrlParameterJson() {
 };
 
 const config = {
+  // rootLink: "https://hai.omegatheme.com/customer-reviews",
   rootLink: "https://localhost/product-reviews-react",
-  // pathName: "/product-reviews-react/client/build",
+  // pathName: "/customer-reviews/client/build",
   pathName: "",
   // shop: window.location.href.split("?shop=")[1],
   shop: "ngo-van-hai.myshopify.com",

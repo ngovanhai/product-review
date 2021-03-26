@@ -515,97 +515,7 @@ function Layout1(props) {
               <i class="fas fa-feather-alt" style={{ marginRight: "5px" }}></i>
               {reviewButton.toUpperCase()}
             </button>
-            {/* <TextStyle variation="strong">{reviewButton}</TextStyle> */}
           </div>
-          {/* <div style={{ display: "flex", margin: "10px 0 10px" }}>
-                      <div>
-                        <p>{ratingLabel}</p>
-                      </div>
-                      <div style={{ marginLeft: "23px" }}>
-                        <i
-                          class="fas fa-star"
-                          style={{
-                            color: valueSelectedStar,
-                            marginRight: "5px",
-                          }}
-                        ></i>
-                        <i
-                          class="fas fa-star"
-                          style={{
-                            color: valueSelectedStar,
-                            marginRight: "5px",
-                          }}
-                        ></i>
-                        <i
-                          class="fas fa-star"
-                          style={{
-                            color: valueSelectedStar,
-                            marginRight: "5px",
-                          }}
-                        ></i>
-                        <i
-                          class="fas fa-star"
-                          style={{
-                            color: valueSelectedStar,
-                            marginRight: "5px",
-                          }}
-                        ></i>
-                        <i
-                          class="fas fa-star"
-                          style={{
-                            color: valueSelectedStar,
-                            marginRight: "5px",
-                          }}
-                        ></i>
-                      </div>
-                    </div>
-                    <div style={{ display: "flex", marginBottom: "16px" }}>
-                      <div style={{ marginRight: "9px", width: "50%" }}>
-                        <TextField placeholder={placeholderAuthorName} />
-                      </div>
-                      <div style={{ width: "50%" }}>
-                        <TextField placeholder={placeholderAuthorEmail} />
-                      </div>
-                    </div>
-                    <div style={{ marginBottom: "16px" }}>
-                      <TextField placeholder={placeholderReviewTitle} />
-                    </div>
-                    <div style={{ marginBottom: "16px" }}>
-                      <TextField
-                        placeholder={placeholderReviewMessage}
-                        multiline={2}
-                      />
-                    </div>
-                    <div
-                      style={{
-                        marginBottom: "16px",
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <div style={{ display: "flex" }}>
-                        <div style={{ width: 50, height: 25 }}>
-                          <DropZone type="image" disabled={true}>
-                            <DropZone.FileUpload />
-                          </DropZone>
-                        </div>
-                        <p style={{ marginLeft: "10px", marginTop: "10px" }}>
-                          {imageButton}
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <button
-                        className="Polaris-Button"
-                        style={{
-                          background: colorButtonBackground,
-                          color: colorButtontext,
-                          float: "right",
-                        }}
-                      >
-                        {buttonSubmit}
-                      </button>
-                    </div> */}
         </div>
       </div>
       {selectedChangeLayout === "1" && (
@@ -621,8 +531,6 @@ function Layout1(props) {
             <div
               style={{
                 marginTop: "19px",
-
-                // borderBottom: "1px solid #ccc",
                 paddingBottom: "15px",
               }}
             >
@@ -728,7 +636,6 @@ function Layout1(props) {
             <div
               style={{
                 marginTop: "19px",
-                // borderBottom: "1px solid #ccc",
                 paddingBottom: "15px",
               }}
             >
